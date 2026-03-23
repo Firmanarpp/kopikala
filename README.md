@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KopiKala - Momen Berharga di Setiap Cangkir
 
-## Getting Started
+KopiKala adalah sebuah platform digital modern yang dirancang untuk menghadirkan pengalaman kopi premium dari kenyamanan layar Anda. Website ini mencerminkan filosofi KopiKala: bahwa di setiap waktu (kala), ada cerita yang tersampaikan melalui secangkir kopi.
 
-First, run the development server:
+## Fitur Utama
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Menu Digital Interaktif**: Telusuri koleksi kopi pilihan, minuman non-kopi, dan camilan lezat kami lengkap dengan deskripsi dan harga terbaru.
+- **Reservasi Meja Online**: Pesan tempat favorit Anda (indoor, outdoor, atau private) secara instan untuk memastikan kenyamanan saat berkunjung.
+- **Galeri Momen**: Lihat suasana hangat coffee shop kami dan karya latte art terbaik dari para barista profesional.
+- **Blog Inspirasi**: Baca artikel menarik tentang edukasi kopi, tips brewing di rumah, serta update event terbaru dari KopiKala.
+- **Kontak & Lokasi Terintegrasi**: Temukan lokasi kami dengan mudah melalui peta interaktif dan hubungi kami langsung via WhatsApp atau Email.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Keunggulan Platform
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Desain Modern & Responsif**: Website dirancang dengan antarmuka yang elegan dan nyaman dipandang, serta optimal untuk dibuka melalui smartphone maupun desktop.
+- **Fitur Dark Mode**: Dukungan mode gelap untuk kenyamanan mata di malam hari.
+- **Keamanan & Kecepatan**: Dibangun dengan teknologi terbaru untuk memastikan akses yang cepat dan pengalaman navigasi yang mulus.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 KopiKala Coffee. Seluruh hak cipta dilindungi.

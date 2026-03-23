@@ -8,6 +8,9 @@
 
 # testing
 /coverage
+__tests__/
+jest.config.js
+jest.setup.tsx
 
 # next.js
 /.next/
