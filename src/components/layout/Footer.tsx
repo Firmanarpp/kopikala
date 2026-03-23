@@ -42,12 +42,12 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-stone-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="relative w-10 h-10">
+              <div className="relative w-9 h-9 md:w-10 md:h-10">
                 <Image
                   src="/images/logo.png"
                   alt="KopiKala Logo"
@@ -55,9 +55,9 @@ export default function Footer() {
                   className="object-contain rounded-full"
                 />
               </div>
-              <span className="text-2xl font-bold">KopiKala</span>
+              <span className="text-xl md:text-2xl font-bold">KopiKala</span>
             </div>
-            <p className="text-stone-400 leading-relaxed">
+            <p className="text-stone-400 leading-relaxed text-sm md:text-base">
               Tempat di mana setiap cangkir kopi menceritakan kisah. Nikmati momen berharga bersama kami.
             </p>
             <div className="flex space-x-4">
@@ -78,13 +78,13 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Menu Cepat</h3>
-            <ul className="space-y-3">
+            <h3 className="text-base md:text-lg font-semibold mb-4">Menu Cepat</h3>
+            <ul className="space-y-2 md:space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-stone-400 hover:text-amber-500 transition-colors duration-300"
+                    className="text-stone-400 hover:text-amber-500 transition-colors duration-300 text-sm md:text-base"
                   >
                     {link.label}
                   </Link>
@@ -95,8 +95,8 @@ export default function Footer() {
 
           {/* Opening Hours */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Jam Buka</h3>
-            <ul className="space-y-3 text-stone-400">
+            <h3 className="text-base md:text-lg font-semibold mb-4">Jam Buka</h3>
+            <ul className="space-y-2 md:space-y-3 text-stone-400 text-sm md:text-base">
               <li className="flex justify-between">
                 <span>Senin - Jumat</span>
                 <span>08:00 - 22:00</span>
@@ -114,14 +114,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Kontak</h3>
-            <ul className="space-y-3 text-stone-400">
+            <h3 className="text-base md:text-lg font-semibold mb-4">Kontak</h3>
+            <ul className="space-y-2 md:space-y-3 text-stone-400 text-sm md:text-base">
               <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 mt-1 text-amber-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 mt-0.5 text-amber-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Jl. Kopi Nikmat No. 123, Jakarta Selatan</span>
+                <span className="text-stone-400">Jl. Kopi Nikmat No. 123, Jakarta Selatan</span>
               </li>
               <li className="flex items-center space-x-3">
                 <svg className="w-5 h-5 text-amber-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -140,11 +140,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-stone-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-stone-500 text-sm">
+        <div className="border-t border-stone-800 mt-10 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p className="text-stone-500 text-xs md:text-sm">
             © {new Date().getFullYear()} KopiKala Coffee. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-sm text-stone-500">
+          <div className="flex space-x-4 md:space-x-6 text-xs md:text-sm text-stone-500">
             <Link href="/privacy" className="hover:text-amber-500 transition-colors">
               Privacy Policy
             </Link>

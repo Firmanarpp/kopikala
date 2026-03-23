@@ -3,7 +3,7 @@ export interface MenuItem {
   name: string;
   description: string;
   price: number;
-  category: 'kopi' | 'minuman-lain' | 'snack' | 'dessert';
+  category: 'kopi' | 'minuman-lain' | 'snack' | 'dessert' | 'rice-bowl' | 'light-meals';
   image: string;
   isPopular?: boolean;
 }
@@ -214,6 +214,134 @@ export const menuItems: MenuItem[] = [
     category: 'dessert',
     image: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400&h=300&fit=crop',
   },
+
+  // Rice Bowl
+  {
+    id: 25,
+    name: 'Chicken Teriyaki Bowl',
+    description: 'Nasi hangat dengan ayam teriyaki, sayuran, dan telur setengah matang',
+    price: 55000,
+    category: 'rice-bowl',
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop',
+    isPopular: true,
+  },
+  {
+    id: 26,
+    name: 'Beef Bowl',
+    description: 'Nasi dengan beef slice saute, jamur, dan bumbu soy garlic',
+    price: 65000,
+    category: 'rice-bowl',
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop',
+  },
+  {
+    id: 27,
+    name: 'Salmon Teriyaki Bowl',
+    description: 'Nasi dengan salmon teriyaki, edamame, dan seaweed salad',
+    price: 72000,
+    category: 'rice-bowl',
+    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop',
+  },
+  {
+    id: 28,
+    name: 'Katsu Curry Bowl',
+    description: 'Nasi dengan chicken katsu, kari Jepang, dan pickled radish',
+    price: 58000,
+    category: 'rice-bowl',
+    image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop',
+  },
+  {
+    id: 29,
+    name: 'Veggie Bowl',
+    description: 'Nasi dengan tofu crispy, sayuran tumis, dan saus special',
+    price: 48000,
+    category: 'rice-bowl',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
+  },
+
+  // Light Meals
+  {
+    id: 30,
+    name: 'Chicken Wings',
+    description: 'Sayap ayam dengan pilihan saus BBQ, spicy honey, atau original',
+    price: 42000,
+    category: 'light-meals',
+    image: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=400&h=300&fit=crop',
+    isPopular: true,
+  },
+  {
+    id: 31,
+    name: 'Chicken Caesar Salad',
+    description: 'Salad romaine dengan ayam panggang, parmesan, croutons, dan caesar dressing',
+    price: 48000,
+    category: 'light-meals',
+    image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop',
+  },
+  {
+    id: 32,
+    name: 'Spaghetti Aglio Olio',
+    description: 'Spaghetti dengan garlic, olive oil, chili flakes, dan parsley',
+    price: 42000,
+    category: 'light-meals',
+    image: 'https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop',
+  },
+  {
+    id: 33,
+    name: 'Spaghetti Carbonara',
+    description: 'Spaghetti dengan bacon, egg yolk, parmesan, dan black pepper',
+    price: 48000,
+    category: 'light-meals',
+    image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop',
+  },
+  {
+    id: 34,
+    name: 'Chicken Pie',
+    description: 'Pie pastry dengan isian ayam, sayuran, dan saus mushroom',
+    price: 38000,
+    category: 'light-meals',
+    image: '/images/menu/chicken-pie.png',
+  },
+  {
+    id: 35,
+    name: 'Dimsum Set',
+    description: 'Set dimsum 6 pcs dengan chicken siomay, hakau, dan lumpia',
+    price: 45000,
+    category: 'light-meals',
+    image: 'https://images.unsplash.com/photo-1583224964978-2257b960c3d3?w=400&h=300&fit=crop',
+  },
+
+  // Additional Kopi (extending from 8 to 12)
+  {
+    id: 36,
+    name: 'Robusta Hitam',
+    description: 'Kopi robusta lokal dengan roasting dark, body bold dan pahit',
+    price: 20000,
+    category: 'kopi',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop',
+  },
+  {
+    id: 37,
+    name: 'Es Kocok Aren',
+    description: 'Kopi es shaken dengan gula aren, susu, dan espresso',
+    price: 28000,
+    category: 'kopi',
+    image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop',
+  },
+  {
+    id: 38,
+    name: 'V60 Single Origin',
+    description: 'Pour over V60 dengan single origin beans pilihan barista',
+    price: 40000,
+    category: 'kopi',
+    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop',
+  },
+  {
+    id: 39,
+    name: 'AeroPress',
+    description: 'Kopi AeroPress dengan extraction berbeda, clean dan bright',
+    price: 38000,
+    category: 'kopi',
+    image: 'https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&h=300&fit=crop',
+  },
 ];
 
 export const categories = [
@@ -222,4 +350,6 @@ export const categories = [
   { id: 'minuman-lain', name: 'Minuman Lain' },
   { id: 'snack', name: 'Snack' },
   { id: 'dessert', name: 'Dessert' },
+  { id: 'rice-bowl', name: 'Rice Bowl' },
+  { id: 'light-meals', name: 'Light Meals' },
 ];

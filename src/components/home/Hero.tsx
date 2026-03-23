@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -14,35 +14,35 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
-          <span className="inline-block px-4 py-2 bg-amber-600/20 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium mb-6">
+          <span className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-amber-600/30 backdrop-blur-sm rounded-full text-amber-300 text-xs md:text-sm font-medium mb-4 md:mb-6">
             Selamat Datang di KopiKala
           </span>
-          
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
             Setiap Cangkir
             <br />
             <span className="text-amber-500">Menceritakan Kisah</span>
           </h1>
-          
-          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Nikmati pengalaman kopi yang tak terlupakan di KopiKala. 
+
+          <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-xl mx-auto mb-8 md:mb-10 leading-relaxed px-2">
+            Nikmati pengalaman kopi yang tak terlupakan di KopiKala.
             Tempat di mana aroma kopi bertemu dengan kehangatan cerita.
           </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link href="/menu">
-              <Button size="lg">
+              <Button size="md" className="w-full sm:w-auto min-w-[160px]">
                 Lihat Menu
               </Button>
             </Link>
             <Link href="/booking">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-stone-900 dark:border-white dark:text-white">
+              <Button variant="outline" size="md" className="w-full sm:w-auto min-w-[160px] border-white text-white hover:bg-white hover:text-stone-900">
                 Reservasi Sekarang
               </Button>
             </Link>
@@ -50,10 +50,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10">
+      {/* Scroll Indicator - hide on mobile, show on md+ */}
+      <div className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10">
         <svg
-          className="w-6 h-6 text-white/60"
+          className="w-5 h-5 text-white/50"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -67,9 +67,9 @@ export default function Hero() {
         </svg>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-amber-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl" />
+      {/* Decorative Elements - reduced on mobile */}
+      <div className="absolute top-16 left-4 md:left-10 w-16 md:w-20 h-16 md:h-20 bg-amber-500/10 rounded-full blur-2xl md:blur-3xl" />
+      <div className="absolute bottom-16 right-4 md:right-10 w-20 md:w-32 h-20 md:h-32 bg-amber-500/10 rounded-full blur-2xl md:blur-3xl" />
     </section>
   );
 }

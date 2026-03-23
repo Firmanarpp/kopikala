@@ -16,15 +16,15 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-24 bg-amber-50 dark:bg-stone-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 md:py-24 bg-amber-50 dark:bg-stone-800">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="text-amber-600 dark:text-amber-500 font-medium">Testimoni</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 dark:text-white mt-2">
+        <div className="text-center mb-10 md:mb-16">
+          <span className="text-amber-600 dark:text-amber-500 font-medium text-sm md:text-base">Testimoni</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-stone-800 dark:text-white mt-2">
             Apa Kata Mereka?
           </h2>
-          <p className="text-stone-600 dark:text-stone-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-stone-600 dark:text-stone-400 mt-3 md:mt-4 max-w-2xl mx-auto text-sm md:text-base">
             Dengarkan cerita dari pelanggan setia kami yang telah merasakan pengalaman di KopiKala.
           </p>
         </div>
@@ -32,11 +32,11 @@ export default function Testimonials() {
         {/* Testimonials Carousel */}
         <div className="relative max-w-4xl mx-auto">
           {/* Main Testimonial */}
-          <div className="bg-white dark:bg-stone-900 rounded-3xl p-8 md:p-12 shadow-xl">
+          <div className="bg-white dark:bg-stone-900 rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 shadow-lg md:shadow-xl">
             <div className="flex flex-col items-center text-center">
               {/* Quote Icon */}
               <svg
-                className="w-12 h-12 text-amber-500/30 mb-6"
+                className="w-10 h-10 md:w-12 md:h-12 text-amber-500/30 mb-4 md:mb-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -44,16 +44,16 @@ export default function Testimonials() {
               </svg>
 
               {/* Content */}
-              <p className="text-lg md:text-xl text-stone-700 dark:text-stone-300 leading-relaxed mb-8">
+              <p className="text-base md:text-lg lg:text-xl text-stone-700 dark:text-stone-300 leading-relaxed mb-6 md:mb-8">
                 {testimonials[activeIndex].content}
               </p>
 
               {/* Rating */}
-              <div className="flex space-x-1 mb-6">
+              <div className="flex space-x-1 mb-4 md:mb-6">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className={`w-5 h-5 ${
+                    className={`w-4 h-4 md:w-5 md:h-5 ${
                       i < testimonials[activeIndex].rating
                         ? 'text-amber-500'
                         : 'text-stone-300 dark:text-stone-600'
@@ -67,8 +67,8 @@ export default function Testimonials() {
               </div>
 
               {/* Author */}
-              <div className="flex items-center space-x-4">
-                <div className="relative w-14 h-14 rounded-full overflow-hidden ring-4 ring-amber-100 dark:ring-amber-900">
+              <div className="flex items-center space-x-3 md:space-x-4">
+                <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden ring-4 ring-amber-100 dark:ring-amber-900">
                   <Image
                     src={testimonials[activeIndex].avatar}
                     alt={testimonials[activeIndex].name}
@@ -77,10 +77,10 @@ export default function Testimonials() {
                   />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-stone-800 dark:text-white">
+                  <h4 className="font-semibold text-stone-800 dark:text-white text-sm md:text-base">
                     {testimonials[activeIndex].name}
                   </h4>
-                  <p className="text-sm text-stone-500 dark:text-stone-400">
+                  <p className="text-xs md:text-sm text-stone-500 dark:text-stone-400">
                     {testimonials[activeIndex].role}
                   </p>
                 </div>
@@ -89,13 +89,13 @@ export default function Testimonials() {
           </div>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-center items-center space-x-4 mt-8">
+          <div className="flex justify-center items-center space-x-3 md:space-x-4 mt-6 md:mt-8">
             <button
               onClick={prevTestimonial}
-              className="w-12 h-12 rounded-full bg-white dark:bg-stone-700 shadow-lg flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-amber-500 hover:text-white transition-all duration-300"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white dark:bg-stone-700 shadow-lg flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-amber-500 hover:text-white transition-all duration-300"
               aria-label="Previous testimonial"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -106,9 +106,9 @@ export default function Testimonials() {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                     index === activeIndex
-                      ? 'bg-amber-500 w-8'
+                      ? 'bg-amber-500 w-6 md:w-8'
                       : 'bg-stone-300 dark:bg-stone-600 hover:bg-amber-300'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
@@ -118,10 +118,10 @@ export default function Testimonials() {
 
             <button
               onClick={nextTestimonial}
-              className="w-12 h-12 rounded-full bg-white dark:bg-stone-700 shadow-lg flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-amber-500 hover:text-white transition-all duration-300"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white dark:bg-stone-700 shadow-lg flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-amber-500 hover:text-white transition-all duration-300"
               aria-label="Next testimonial"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>

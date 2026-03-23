@@ -15,24 +15,24 @@ export default function MenuPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-b from-stone-900 to-stone-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-2 bg-amber-600/20 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium mb-6">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 bg-gradient-to-b from-stone-900 to-stone-800">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <span className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-amber-600/20 backdrop-blur-sm rounded-full text-amber-300 text-xs md:text-sm font-medium mb-4 md:mb-6">
             Menu Kami
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">
             Pilihan Menu KopiKala
           </h1>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Jelajahi berbagai pilihan kopi, minuman, dan makanan lezat yang kami sajikan 
+          <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto px-2">
+            Jelajahi berbagai pilihan kopi, minuman, dan makanan lezat yang kami sajikan
             dengan penuh cinta dan dedikasi.
           </p>
         </div>
       </section>
 
       {/* Menu Section */}
-      <section className="py-16 bg-stone-50 dark:bg-stone-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 md:py-16 bg-stone-50 dark:bg-stone-900">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Filter */}
           <MenuFilter
             activeCategory={activeCategory}
@@ -40,7 +40,7 @@ export default function MenuPage() {
           />
 
           {/* Menu Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6">
             {filteredItems.map((item) => (
               <MenuCard key={item.id} item={item} />
             ))}
@@ -58,15 +58,15 @@ export default function MenuPage() {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 bg-white dark:bg-stone-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-amber-50 dark:bg-amber-900/20 rounded-2xl p-8 md:p-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="py-12 md:py-16 bg-white dark:bg-stone-800">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl md:rounded-2xl p-6 md:p-10 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div>
-                <h2 className="text-2xl font-bold text-stone-800 dark:text-white mb-4">
+                <h2 className="text-xl md:text-2xl font-bold text-stone-800 dark:text-white mb-4">
                   Informasi Menu
                 </h2>
-                <ul className="space-y-3 text-stone-600 dark:text-stone-400">
+                <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-stone-600 dark:text-stone-400">
                   <li className="flex items-start space-x-3">
                     <svg className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
