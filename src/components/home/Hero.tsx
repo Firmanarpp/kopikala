@@ -24,7 +24,7 @@ export default function Hero() {
             Selamat Datang di KopiKala
           </span>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Setiap Cangkir
             <br />
             <span className="text-amber-500">Menceritakan Kisah</span>
@@ -42,29 +42,29 @@ export default function Hero() {
               </Button>
             </Link>
             <Link href="/booking">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-stone-900">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-stone-900 dark:border-white dark:text-white">
                 Reservasi Sekarang
               </Button>
             </Link>
           </div>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg
-            className="w-6 h-6 text-white/60"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10">
+        <svg
+          className="w-6 h-6 text-white/60"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
       </div>
 
       {/* Decorative Elements */}
